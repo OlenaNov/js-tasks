@@ -243,3 +243,73 @@
 
 
 
+
+
+// const daysUntilDeadline = 3;
+// if (daysUntilDeadline === 0) {
+//     console.log('Today');
+// } else if (daysUntilDeadline === 1) {
+//     console.log('Tomorrow');
+// } else if (daysUntilDeadline === 2) {
+//     console.log('Day after tomorrow');
+// } else if (daysUntilDeadline >= 3) {
+//     console.log('Date in the future'); 
+// } else {
+//     console.log('Overdue'); 
+// }
+
+
+
+
+
+
+// const daysUntilDeadline = 2;
+// switch (daysUntilDeadline) {
+// case 0:
+// console.log('Today');
+// break;
+
+// case 1:
+// console.log('Tomorrow');
+// break;
+
+// case 2:
+// console.log('Day after tomorrow');
+// break;
+
+// default:
+// console.log('Date in the future'); 
+// }
+
+
+
+
+
+// const min = 20;
+// const max = 100;
+
+// for (let i = min; i <= max; i += 1) {
+//     if (i % 5 === 0) {
+//     console.log(i);
+//     }
+// }
+
+
+
+
+
+let login = prompt('Enter login');
+let password;
+console.log(login);
+if (login === 'Admin') {
+    password = prompt('Password');
+    if (password === 'I am admin') {
+        console.log('Hello!')
+    } else {
+        console.log('Password not valid')
+    }
+} else if (!login) {
+    console.log('Canceled');
+} else {
+    console.log("I don't know you")
+}

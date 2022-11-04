@@ -414,13 +414,240 @@
 
 
 
-const cart = [54, 28, 105, 70, 92, 17, 120];
-let total = 0;
-// console.log(card.length);
-for (let i = 0; i < cart.length; i += 1) {
-    console.log(cart[i]);
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+// let total = 0;
+// // console.log(card.length);
+// for (let i = 0; i < cart.length; i += 1) {
+//     console.log(cart[i]);
 
-    total += cart[i];
-}
+//     total += cart[i];
+// }
 
-console.log('Total: ', total);
+// console.log('Total: ', total);
+
+
+
+
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+// let total = 0;
+// for (let number of numbers) {
+//     console.log(number);
+// if (number % 2 === 0) {
+//     total += number;
+//     console.log('Plus total: ', number);
+//  }
+// }
+// console.log(total);
+
+
+
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+// let total = 0;
+// for (let number of numbers) {
+//     console.log(number);
+// if (number % 2 !== 0) {
+//     console.log('Not total: ', number);
+//     continue;
+//  }
+//     total += number;
+// }
+// console.log('Total: ', total);
+
+
+
+
+
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+// const loginToFind = 'owcjy';
+// let message = `User ${loginToFind} is not found`;
+
+// for (let i = 0; i < logins.length; i += 1) {
+//     const login = logins[i];
+//     if (login === loginToFind) {
+//         message = `User ${loginToFind} found`;
+//         break;
+//     } 
+// }
+//     console.log(message);
+
+
+
+
+
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+// const loginToFind = 'owcjy';
+// let message = `User ${loginToFind} is not found`
+// for (const login of logins) {
+//     if (login === loginToFind) {
+//         message = `User ${loginToFind} found`;
+//         break;
+//     }
+// }
+// console.log(message);
+
+
+
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+// const loginToFind = 'owcjy';
+// let message;
+
+// for (const login of logins) {
+//     login === loginToFind ? message = `User ${loginToFind} found` : message = `User ${loginToFind} not found`;
+// }
+// console.log(message);
+
+
+
+
+
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+// const loginToFind = 'owcjy';
+// let message;
+
+// logins.includes(loginToFind) 
+// ? message = `User ${loginToFind} found` 
+// : message = `User ${loginToFind} not found`;
+
+// console.log(message);
+
+
+
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let minNumber = numbers[0];
+
+// for (let number of numbers) {
+//     if (number < minNumber) {
+//         minNumber = number;
+//     }
+// }
+// console.log(minNumber);
+
+
+
+// const numbers = [51, 18, 13, 24, 7, 85, 19];
+// let maxNumber = numbers[0];
+
+// for (let number of numbers) {
+//     if (number > maxNumber) {
+//         maxNumber = number;
+//     }
+// }
+// console.log(maxNumber);
+
+
+
+
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+// let string = '';
+
+// for (const friend of friends) {
+//     string += friend + ', ';
+// }
+// string = string.slice(0, string.length - 2);
+// console.log(string);
+
+
+
+
+
+// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
+// const string = friends.join(', ');
+// console.log(string);
+
+
+
+
+// const string = 'JavaScript';
+// const letters = string.split('');
+// let invertedString = '';
+
+// console.log(letters);
+
+// for (const letter of letters) {
+//     console.log(letter);
+
+//     invertedString += 
+//     letter === letter.toLowerCase() 
+//     ? letter.toUpperCase() 
+//     : letter.toLowerCase();
+// }
+// console.log(invertedString);
+
+
+
+
+// const title = 'Top 10 benefits of React framework';
+// const normalizedTitle = title.toLowerCase();
+// console.log(normalizedTitle);
+
+// const words = normalizedTitle.split(' ');
+// console.log(words);
+
+// const slug = words.join('-');
+// console.log(slug);
+
+
+
+
+
+// const title = 'Top 10 benefits of React framework';
+// const slug = title.toLowerCase().split(' ').join('-');
+
+// console.log(slug);
+
+
+
+
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+// let total = 0;
+
+// const arrayTotal = array1.concat(array2);
+// console.table(arrayTotal);
+// for (const number of arrayTotal) {
+//     total += number;
+// }
+// console.log(total);
+
+
+
+
+const cards = [
+    'Card-1', 
+    'Card-2', 
+    'Card-3', 
+    'Card-4', 
+    'Card-5'
+];
+console.table(cards);
+
+
+// const cardToRemove = 'Card-3';
+// const index = cards.indexOf(cardToRemove);
+// console.log(index);
+
+// cards.splice(index, 1);
+// console.table(cards);
+
+
+// const cardNew = 'Card-6';
+// cards.splice(cards.length, 0, cardNew);
+// console.table(cards);
+
+
+// const cardNew = 'Card-6';
+// cards.push(cardNew);
+// console.table(cards);
+
+
+// const cardNew = 'Card-New';
+// cards.splice(cards.length -1, 0, cardNew);
+// console.table(cards);
+
+
+// cards.pop();
+// console.table(cards);
+

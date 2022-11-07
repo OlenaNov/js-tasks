@@ -615,14 +615,14 @@
 
 
 
-const cards = [
-    'Card-1', 
-    'Card-2', 
-    'Card-3', 
-    'Card-4', 
-    'Card-5'
-];
-console.table(cards);
+// const cards = [
+//     'Card-1', 
+//     'Card-2', 
+//     'Card-3', 
+//     'Card-4', 
+//     'Card-5'
+// ];
+// console.table(cards);
 
 
 // const cardToRemove = 'Card-3';
@@ -651,3 +651,83 @@ console.table(cards);
 // cards.pop();
 // console.table(cards);
 
+
+
+
+// const calculateTotalPrice = function (items) {
+//     console.log('items inside a function', items);
+
+//     let total = 0;
+
+//     for (const item of items) {
+//         total += item;
+//     }
+
+//     return total;
+// };
+
+// const r1 = calculateTotalPrice([1, 2, 3]);
+// const r2 = calculateTotalPrice([5, 10, 15, 20]);
+// const r3 = calculateTotalPrice([100, 200, 300]);
+
+// console.log(`Total amount of purchases ${r1}`);
+// console.log(`Total amount of purchases ${r2}`);
+// console.log(`Total amount of purchases ${r3}`);
+
+
+
+// function getExtremeElements(array) {
+//     // Change code below this line
+//     // lastElement = array.length - 2;
+//     // console.log(lastElement);
+//   array.splice(1, array.length - 2);
+//   console.log(array);
+//     // Change code above this line
+//   }
+  
+//   console.log(getExtremeElements([1, 2, 3, 4, 5]));
+
+
+
+
+// function getExtremeElements(array) {
+//     // Change code below this line
+//     array.splice(1, array.length - 2);
+//     return array;
+  
+//     // Change code above this line
+//   }
+//     console.log(getExtremeElements([1, 2, 3, 4, 5]));
+
+
+
+
+// function splitMessage(message, delimiter) {
+//     let words;
+//     // Change code below this line
+//   words = message.split(delimiter);
+//     // Change code above this line
+//     console.log(words);
+//     return words;
+//   }
+
+//   splitMessage('JavaScript essentials', "");
+
+
+
+
+
+function calculateEngravingPrice(message, pricePerWord) {
+    // Change code below this line
+ 
+    // message.split(" ");
+    // console.log(message.split(" "));
+    const total = message.split(" ").length * pricePerWord;
+    console.log(message);
+    console.log(total);
+    return total;
+ 
+    // Change code above this line
+ }
+
+ calculateEngravingPrice("JavaScript is in my blood", 10)

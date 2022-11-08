@@ -717,17 +717,164 @@
 
 
 
-function calculateEngravingPrice(message, pricePerWord) {
-    // Change code below this line
+// function calculateEngravingPrice(message, pricePerWord) {
+//     // Change code below this line
  
-    // message.split(" ");
-    // console.log(message.split(" "));
-    const total = message.split(" ").length * pricePerWord;
-    console.log(message);
-    console.log(total);
-    return total;
+//     // message.split(" ");
+//     // console.log(message.split(" "));
+//     const total = message.split(" ").length * pricePerWord;
+//     console.log(message);
+//     console.log(total);
+//     return total;
  
-    // Change code above this line
- }
+//     // Change code above this line
+//  }
 
- calculateEngravingPrice("JavaScript is in my blood", 10)
+//  calculateEngravingPrice("JavaScript is in my blood", 10)
+
+
+
+
+
+//  function slugify(title) {
+//     // Change code below this line
+
+//     let slug = title.toLowerCase().split(" ").join("-");
+//     console.log(slug);
+//     return slug;
+
+//     // Change code above this line
+//   }
+
+//   slugify("Arrays for begginers");
+
+
+
+
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+// // Change code below this line
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, - 1);
+// const lastThreeEls = fruits.slice(- 3);
+
+// console.log(firstTwoEls);
+// console.log(nonExtremeEls);
+// console.log(lastThreeEls);
+
+
+
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//     // Change code below this line
+//   const newArray = firstArray.concat(secondArray);
+//   const lengthNewArray = newArray.length;
+
+//   if (lengthNewArray > maxLength) {
+//     console.log(newArray.slice(0, maxLength));
+//     return newArray.slice(0, maxLength);
+//   } else {
+//     console.log(newArray);
+//     return newArray;
+//   }
+//     // Change code above this line
+//   }
+
+//   makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+
+//   makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+
+
+
+
+
+
+// function calculateTotal(number) {
+//     // Change code below this line
+//     let total = 0;
+//    for (let i = 0; i <= number; i += 1) {
+//     total += i;
+//     //  console.log(total);
+//    }
+//    return total;
+//      // Change code above this line
+//    }
+
+//    calculateTotal(3);
+
+
+
+
+// function calculateTotalPrice(order) {
+//     let total = 0;
+//     // Change code below this line
+//     for (let i = 0; i < order.length; i += 1) {
+//       total += order[i];
+//     //   console.log(total);
+//     //   console.log(i);
+//     }
+//     // Change code above this line
+//     console.log(total);
+//     return total;
+//   }
+
+//   calculateTotalPrice([12, 85, 37, 4]);
+
+
+
+
+
+// function findLongestWord(string) {
+//     // Change code below this line
+//     const stringArray = string.split(" ");
+//     console.log(stringArray);
+
+//     let maxLengthWord = stringArray[0];
+//     // console.log(maxLengthWord);
+
+//     for (let stringArrayItem of stringArray) {
+//     //    console.log(stringArrayItem.length);
+//     //    console.log(maxLengthWord.length);
+
+//       if (stringArrayItem.length > maxLengthWord.length) {
+//         maxLengthWord = stringArrayItem;
+//         return console.log(maxLengthWord);
+//         // console.log(stringArrayItem);
+//         // console.log(maxLengthWord);
+//       } 
+//     //   console.log(maxLengthWord);
+//     //   return console.log(maxLengthWord);
+//     }
+  
+//     // Change code above this line
+//   }
+
+//   findLongestWord("The quick brown fox jumped over the lazy dog");
+
+
+function findLongestWord(string) {
+    // Change code below this line
+    const stringArray = string.split(" ");
+    console.log(stringArray);
+
+    let maxLengthWord = stringArray[0];
+    // console.log(maxLengthWord);
+
+    for (let stringArrayItem of stringArray) {
+    //    console.log(stringArrayItem.length);
+    //    console.log(maxLengthWord.length);
+
+      if (stringArrayItem.length > maxLengthWord.length) {
+        maxLengthWord = stringArrayItem;
+        return console.log(maxLengthWord);
+        // console.log(stringArrayItem);
+        // console.log(maxLengthWord);
+      } 
+    //   console.log(maxLengthWord);
+    //   return console.log(maxLengthWord);
+    }
+  
+    // Change code above this line
+  }
+
+  findLongestWord("The quick brown fox jumped over the lazy dog");

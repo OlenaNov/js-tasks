@@ -644,21 +644,22 @@
 
 
 
-const cangeCase = function (string) {
-  const letters = string.split('');
-  let invertedString = '';
+//   const changeCase = function (string) {
+//   const letters = string.split('');
+//   let invertedString = '';
 
-  for (const letter of letters) {
+//   for (const letter of letters) {
+//     const isInLowerCase = letter === letter.toLowerCase();
 
-    invertedString += 
-    letter === letter.toLowerCase() 
-    ? letter.toUpperCase() 
-    : letter.toLowerCase();
-}
-  return invertedString;
-};
+//     invertedString += isInLowerCase
+//     ? letter.toUpperCase() 
+//     : letter.toLowerCase();
+// }
 
-console.log(cangeCase('JavaScript'));
+//   return invertedString;
+// };
+
+// console.log(changeCase('JavaScript'));
 
 
 // const title = 'Top 10 benefits of React framework';
@@ -674,11 +675,22 @@ console.log(cangeCase('JavaScript'));
 
 
 
-
 // const title = 'Top 10 benefits of React framework';
 // const slug = title.toLowerCase().split(' ').join('-');
 
 // console.log(slug);
+
+
+
+
+// const slugify = function (string) {
+
+// return string.toLowerCase().split(' ').join('-');
+// };
+
+// console.log(slugify('Top 10 benefits of React framework'));
+
+
 
 
 

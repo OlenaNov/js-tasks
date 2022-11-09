@@ -515,6 +515,46 @@
 
 
 
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+// const findLogin = function (allLogins, loginToFind) {
+
+//   for (const login of allLogins) {
+
+//   if (login === loginToFind) {
+//     return `User ${loginToFind} found`;
+//       }
+//   }
+//   return `User ${loginToFind} not found`;
+// }
+
+//   console.log(findLogin(logins, 'gfsjrj'));
+//   console.log(findLogin(logins, 'owcjy'));
+//   console.log(findLogin(logins, 'uoorteg'));
+//   console.log(findLogin(logins, 'geriga'));
+
+
+
+
+
+// const logins = ['jfkghd', 'owcjy', 'bncvmre', 'geriga'];
+
+// const findLogin = function (allLogins, loginToFind) {
+
+// return  allLogins.includes(loginToFind) 
+// ? `User ${loginToFind} found` 
+// : `User ${loginToFind} not found`;
+
+// }
+
+//   console.log(findLogin(logins, 'gfsjrj'));
+//   console.log(findLogin(logins, 'owcjy'));
+//   console.log(findLogin(logins, 'uoorteg'));
+//   console.log(findLogin(logins, 'geriga'));
+
+
+
+
+
 // const numbers = [51, 18, 13, 24, 7, 85, 19];
 // let minNumber = numbers[0];
 
@@ -524,6 +564,30 @@
 //     }
 // }
 // console.log(minNumber);
+
+
+
+
+
+
+
+// const findMinNumber = function (numbers) {
+//   let minNumber = numbers[0];
+
+//   for (let number of numbers) {
+//       if (number < minNumber) {
+//           minNumber = number;
+//       }
+//   }
+//   return minNumber;
+// };
+
+
+// console.log(findMinNumber([51, 18, 13, 24, 7, 85, 19]));
+// console.log(findMinNumber([51, 18, 13, 24, -2, 85, 19]));
+
+
+
 
 
 
@@ -577,6 +641,24 @@
 // console.log(invertedString);
 
 
+
+
+
+const cangeCase = function (string) {
+  const letters = string.split('');
+  let invertedString = '';
+
+  for (const letter of letters) {
+
+    invertedString += 
+    letter === letter.toLowerCase() 
+    ? letter.toUpperCase() 
+    : letter.toLowerCase();
+}
+  return invertedString;
+};
+
+console.log(cangeCase('JavaScript'));
 
 
 // const title = 'Top 10 benefits of React framework';
@@ -824,6 +906,54 @@
 
 
 
+
+// const logItems = function (items) {
+//   for (let item of items) {
+//     console.log(item);
+//   }
+// };
+
+// logItems ([7, 4, 5, 6]);
+// logItems (['I', 'am', 'lucky', '!']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // function findLongestWord(string) {
 //     // Change code below this line
 //     const stringArray = string.split(" ");
@@ -852,29 +982,32 @@
 //   findLongestWord("The quick brown fox jumped over the lazy dog");
 
 
-function findLongestWord(string) {
-    // Change code below this line
-    const stringArray = string.split(" ");
-    console.log(stringArray);
 
-    let maxLengthWord = stringArray[0];
-    // console.log(maxLengthWord);
 
-    for (let stringArrayItem of stringArray) {
-    //    console.log(stringArrayItem.length);
-    //    console.log(maxLengthWord.length);
 
-      if (stringArrayItem.length > maxLengthWord.length) {
-        maxLengthWord = stringArrayItem;
-        return console.log(maxLengthWord);
-        // console.log(stringArrayItem);
-        // console.log(maxLengthWord);
-      } 
-    //   console.log(maxLengthWord);
-    //   return console.log(maxLengthWord);
-    }
+// function findLongestWord(string) {
+//     // Change code below this line
+//     const stringArray = string.split(" ");
+//     console.log(stringArray);
+
+//     let maxLengthWord = stringArray[0];
+//     // console.log(maxLengthWord);
+
+//     for (let stringArrayItem of stringArray) {
+//     //    console.log(stringArrayItem.length);
+//     //    console.log(maxLengthWord.length);
+
+//       if (stringArrayItem.length > maxLengthWord.length) {
+//         maxLengthWord = stringArrayItem;
+//         return console.log(maxLengthWord);
+//         // console.log(stringArrayItem);
+//         // console.log(maxLengthWord);
+//       } 
+//     //   console.log(maxLengthWord);
+//       return console.log(maxLengthWord);
+//     }
   
-    // Change code above this line
-  }
-
-  findLongestWord("The quick brown fox jumped over the lazy dog");
+//     // Change code above this line
+//   } 
+// }
+//     findLongestWord("The quick brown fox jumped over the lazy dog");

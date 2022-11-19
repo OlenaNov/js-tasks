@@ -27,7 +27,7 @@
 
 //         if (args.includes(element)) {
 //             unicalElements.push(element);
-//             // console.log(`${element} is everywhere`); 
+//             // console.log(`${element} is everywhere`);
 //         }
 //     }
 //     return unicalElements;
@@ -134,24 +134,41 @@
 
 
 
-function includes(array, value) {
-    // Change code below this line
-  for (let element of array) {
+// function includes(array, value) {
+//     // Change code below this line
+//   for (let element of array) {
 
-    if (element === value) {
-        // console.log(true);
-        return console.log(includes());
-        } 
-        // console.log(false);
-    }
-    // Change code above this line
-  };
+//     if (element === value) {
+//         // console.log(true);
+//         return console.log(true);
+//         }
+//   }
+//           console.log(false);
+//     // Change code above this line
+//   };
 
-includes([1, 2, 3, 4, 5], 3);
-//   true
-includes([1, 2, 3, 4, 5], 17);
-//   false
+// includes([1, 2, 3, 4, 5], 3);
+// //   true
+// includes([1, 2, 3, 4, 5], 17);
+// //   false
 
 
 
-// bhjghjgnmmjnhjbghvfhbfvgf
+
+// function includes(array, value) {
+//     // Change code below this line
+
+//   for (let element of array) {
+  
+//     if (element === value) {
+//         return true;
+//         }
+//   }
+//           return false;
+//     // Change code above this line
+//   };
+
+// includes([1, 2, 3, 4, 5], 3);
+// //   true
+// includes([1, 2, 3, 4, 5], 17);
+// //   false

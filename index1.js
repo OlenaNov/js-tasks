@@ -172,3 +172,52 @@
 // //   true
 // includes([1, 2, 3, 4, 5], 17);
 // //   false
+
+
+
+
+// const cart = {
+//     items: [],
+//     getItems() {},
+//     add(product) {},
+//     remove(productName),
+//     clear() {},
+//     countTotalPrice() {},
+//     increaseQuantity(productName) {},
+//     decreaseQuantity(productName) {},
+// }
+
+// cart.add({ name: 'apple', price: 50 });
+// cart.add({ name: 'lemon', price: 60 });
+// cart.add({ name: 'grape', price: 60 });
+// cart.add({ name: 'strawberry', price: 110 });
+
+
+
+
+
+
+
+// function countProps(object) {
+//     let propCount = 0;
+//     let prop = [];
+//     // Change code below this line
+//   for (let key in object) {
+//     if (object.hasOwnProperty(key)) {
+//   console.log(key);
+//     prop.push(key);
+// }
+//   }
+//   console.log(prop);
+//   propCount = prop.length;
+//   console.log(propCount);
+//     // Change code above this line
+//     return propCount;
+//   }
+  
+//   countProps({ name: "Mango", age: 2 });
+
+
+
+
+

@@ -623,31 +623,157 @@
 
 
 
-const bookShelf = {
-    // Change code below this line
-    books: ["The last kingdom", "The guardian of dreams"],
-    getBooks() {
-      return "Returning all books";
-    },
-    addBook(bookName) {
-      return `Adding book ${bookName}`;
-    },
-    removeBook(bookName) {
-    let indexBook = 0;
-    indexBook = this.books.indexOf(bookName);
-    // console.log(this.books.indexOf(bookName))
-      slipe(indexBook, 1);
-      console.log(this.books)
-      return `Deleting book ${bookName}`;
-    },
-    updateBook(oldName, newName) {
-  
-      return `Updating book ${oldName} to ${newName}`;
-    }
-    // Change code above this line
-  };
+// const bookShelf = {
+//     // Change code below this line
+//     books: ["The last kingdom", "The guardian of dreams", "Red sunset", "Sands of dune"],
+//     getBooks() {
+//       return "Returning all books";
+//     },
+//     addBook(bookName) {
+//       return `Adding book ${bookName}`;
+//     },
+//     removeBook(bookName) {
+//     if (this.books.indexOf(bookName) >= 0) {
+//     this.books.splice(this.books.indexOf(bookName), 1);
+//       return `Deleting book ${bookName}`;
+//       };
+//     },
+//     updateBook(oldName, newName) {
+//       if (this.books.includes(oldName)) {
+//               // console.log(oldName);
+//               this.books.splice(this.books.indexOf(oldName), 1, newName);
+//               // console.log(this.books);
+//               console.log(`Updating book ${oldName} to ${newName}`);
+//               return `Updating book ${oldName} to ${newName}`;
+//       }
+//     },
+//     // Change code above this line
+//   };
 
-  bookShelf.removeBook("The guardian of dreams");
-//    возвращает строку "Deleting book Red sunset"
-  bookShelf.updateBook("Sands of dune", "Dune");
-//    возвращает строку "Updating book Sands of dune to Dune"
+// // bookShelf.removeBook("Red sunset");
+//   //  возвращает строку "Deleting book Red sunset"
+  
+// bookShelf.updateBook("Sands of dune", "Dune");
+//   //  возвращает строку "Updating book Sands of dune to Dune"
+
+
+
+
+
+// potions массив объектов со следующими свойствами
+
+// {
+//   name: "Dragon breath",
+//   price: 700
+// }
+
+// не с массивом строк, а с массивом объектов.
+
+// getPotions()-метод для получения всех зелий.Возвращает значение 
+// свойства potions.
+
+// addPotion(newPotion) - добавляет зелье newPotion (уже объект) 
+// в массив в свойстве potions, но только если такого зелья еще нет 
+// в инвентаре. В противном случае возвращается строка.
+
+// removePotion(potionName) - удаляет объект зелья с именем
+//  potionName из массива в свойстве potions.
+
+// updatePotionName(oldName, newName) - обновляет свойство name 
+// объекта-зелья с названием oldName на newName в массиве potions.
+
+const atTheOldToad = {
+  potions: [
+    { name: "Speed potion", price: 460 },
+    { name: "Dragon breath", price: 780 },
+    { name: "Stone skin", price: 520 },
+  ],
+  // Change code below this line
+  
+  getPotions() {
+    // console.log(this.potions);
+    return this.potions;
+  },
+  
+  addPotion(newPotion) {
+
+    for (let potion of this.potions) {
+
+      if (potion !== newPotion) {
+
+        this.potions.push(newPotion);
+        console.log(this.potions);
+      }
+
+      console.log(`Error! Potion ${newPotion} is already in your inventory!`);
+        return `Error! Potion ${newPotion} is already in your inventory!`;
+    } 
+  },
+
+  removePotion(potionName) {
+    const potionIndex = this.potions.indexOf(potionName);
+
+    if (potionIndex === -1) {
+      return `Potion ${potionName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1);
+  },
+  updatePotionName(oldName, newName) {
+    const potionIndex = this.potions.indexOf(oldName);
+
+    if (potionIndex === -1) {
+      return `Potion ${oldName} is not in inventory!`;
+    }
+
+    this.potions.splice(potionIndex, 1, newName);
+  },
+  // Change code above this line
+};
+
+
+// atTheOldToad.getPotions();
+// для исходного объекта возвращает [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
+
+atTheOldToad.addPotion({ name: "Stone skin", price: 520 })
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
+// // , в массиве potions последним элементом будет этот объект
+
+// atTheOldToad.addPotion({ name: "Power potion", price: 270 })
+// // , в массиве potions последним элементом будет этот объект
+
+// // Если добавляемое зелье уже есть в массиве potions, метод 
+// // addPotion возвращает строку с текстом из исходного кода
+
+// // Если добавляемое зелье уже есть в массиве potions, 
+// // метод addPotion не добавляет в него передаваемый обьект
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+// // , массив potions не изменяется
+
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+// // , массив potions не изменяется
+
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+// // , возвращает строку 
+// // "Error! Potion Dragon breath is already in your inventory!"
+
+
+// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+// // , возвращает строку 
+// // "Error! Potion Stone skin is already in your inventory!"
+
+// atTheOldToad.removePotion("Dragon breath")
+// // , в свойстве potions будет массив 
+// // [ { name: "Speed potion", price: 460 }, { name: "Stone skin", price: 520 } ]
+
+// atTheOldToad.removePotion("Speed potion")
+// // , в свойстве potions будет массив 
+// // [ { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 }]
+
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+// // , в свойстве potions будет массив 
+// // [{ name: "Speed potion", price: 460 }, { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 } ]
+
+// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
+// // , в свойстве potions будет массив 
+// // [{ name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 } ]

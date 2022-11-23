@@ -699,15 +699,13 @@ const atTheOldToad = {
 
     for (let potion of this.potions) {
 
-      if (potion !== newPotion) {
-
-        this.potions.push(newPotion);
-        console.log(this.potions);
-      }
-
-      console.log(`Error! Potion ${newPotion} is already in your inventory!`);
+      if (potion.name === newPotion.name) {
+        // console.log(`Error! Potion ${newPotion} is already in your inventory!`);
         return `Error! Potion ${newPotion} is already in your inventory!`;
-    } 
+      }; 
+    }; 
+    // console.log(this.potions);
+    return this.potions.push(newPotion);
   },
 
   removePotion(potionName) {
@@ -735,11 +733,11 @@ const atTheOldToad = {
 // atTheOldToad.getPotions();
 // для исходного объекта возвращает [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
 
-atTheOldToad.addPotion({ name: "Stone skin", price: 520 })
+// atTheOldToad.addPotion({ name: "Stone skin", price: 520 });
 // atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
 // // , в массиве potions последним элементом будет этот объект
 
-// atTheOldToad.addPotion({ name: "Power potion", price: 270 })
+atTheOldToad.addPotion({ name: "Power potion", price: 270 })
 // // , в массиве potions последним элементом будет этот объект
 
 // // Если добавляемое зелье уже есть в массиве potions, метод 

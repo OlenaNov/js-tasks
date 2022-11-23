@@ -469,3 +469,156 @@
 // для icon - строку 
 // "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
   
+// const highTemperatures = {
+//     yesterday: 28,
+//     today: 26,
+//     tomorrow: 33,
+//   };
+//   // Change code below this line
+  
+//   const { yesterday: highYesterday, today: highToday, tomorrow: highTomorrow, icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", } = highTemperatures;
+  
+//   // Change code above this line
+//   const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+
+
+// Мы получили прогноз погоды на два дня, с минимальными и 
+// максимальными температурами, а также необязательными иконками. 
+// Замени объявления всех переменных одной операцией деструктуризации
+//  свойств объекта forecast. Задай значение по умолчанию для иконок,
+//   переменных todayIcon и tomorrowIcon - строку 
+//   "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg".
+
+// const forecast = {
+//     today: {
+//       low: 28,
+//       high: 32,
+//       icon: "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg",
+//     },
+//     tomorrow: {
+//       low: 27,
+//       high: 31,
+//     },
+//   };
+//   // Change code below this line
+  
+//   const { 
+//     today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", }, 
+//     tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg", },
+//  } = forecast;
+
+
+
+
+
+// Напиши функцию makeTask(data) которая принимает один параметр 
+// data - объект со следующими свойствами.
+
+// text - текст задачи.
+// category - категория задачи.
+// priority - приоритет задачи.
+// Функция должна составить и вернуть 
+// новый объект задачи, 
+// не изменяя напрямую параметр data. В новом объекте должно быть 
+// свойство completed, 
+// значение которого хранится в одноимённой 
+// локальной переменной.
+
+// В параметре data гарантированно будет только свойство text, 
+// а остальные два, category и priority, могут отсутствовать. 
+// Тогда, в новом объекте задачи, в свойствах category и priority 
+// должны быть значения по умолчанию, хранящиеся в одноимённых 
+// локальных переменных.
+
+// function makeTask(data) {
+//     const completed = false;
+//     const category = "General";
+//     const priority = "Normal";
+//     // Change code below this line
+//   return {
+//     completed: completed, 
+//     category: category, 
+//     priority: priority,
+//     ...data, 
+// };
+// // console.log(newData);
+//     // Change code above this line
+//   };
+
+//   makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" })
+// //   возвращает 
+// // { category: "Homemade", priority: "Low", text: "Take out the trash",
+// //  completed: false }
+
+// makeTask({ category: "Finance", text: "Take interest" }) 
+// // возвращает { category: "Finance", priority: "Normal", 
+// // text: "Take interest", completed: false }
+
+
+
+
+
+
+// function add(...args) {
+//     let result = 0;
+//     for (let arg of args) {
+//       result += arg;
+//     };
+//     // console.log(result)
+//     return result;
+//   };
+  
+//   add(12, 4, 11, 48);
+// //    возвращает 75
+
+
+
+
+
+
+// // Change code below this line
+// function addOverNum(firstNumber, ...args) {
+//     let total = 0;
+  
+//     for (const arg of args) {
+//       if (arg > firstNumber) {
+//       total += arg;
+//         };
+//     };
+//     console.log(total);
+//     return total;
+//     // Change code above this line
+//   }
+
+//   addOverNum(50, 15, 27);
+// //    возвращает 0
+//     addOverNum(10, 12, 4, 11, 48, 10, 8);
+//     //  возвращает 71
+
+
+
+
+
+// // Change code below this line
+// function findMatches(numbers, ...args) {
+//     const matches = []; // Don't change this line
+//     // console.log(numbers);
+//     // console.log(args);
+//     for (let number of numbers) {
+//         if (args.includes(number)) {
+//             matches.push(number);
+//         };
+//     }
+//     // Change code above this line
+//     console.log(matches);
+//     return matches;
+//   };
+
+//   findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41);
+// //    возвращает [24, 9, 41]
+
+
+
+

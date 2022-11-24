@@ -713,17 +713,12 @@ const atTheOldToad = {
       // console.log(potion.name);
       // console.log(potionName);
       if (potion.name === potionName) {
-        this.potions.splice(potion)
+        return this.potions.splice(potion, 1);
+        
       };
     };
     console.log(this.potions);
-    // const potionIndex = this.potions.indexOf(potionName);
-
-    // if (potionIndex === -1) {
-    //   return `Potion ${potionName} is not in inventory!`;
-    // }
-
-    // this.potions.splice(potionIndex, 1);
+    return `Potion ${potionName} is not in inventory!`;
   },
   updatePotionName(oldName, newName) {
     const potionIndex = this.potions.indexOf(oldName);

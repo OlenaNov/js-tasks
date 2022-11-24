@@ -660,120 +660,137 @@
 
 
 
-// potions массив объектов со следующими свойствами
+// // potions массив объектов со следующими свойствами
 
-// {
-//   name: "Dragon breath",
-//   price: 700
-// }
+// // {
+// //   name: "Dragon breath",
+// //   price: 700
+// // }
 
-// не с массивом строк, а с массивом объектов.
+// // не с массивом строк, а с массивом объектов.
 
-// getPotions()-метод для получения всех зелий.Возвращает значение 
-// свойства potions.
+// // getPotions()-метод для получения всех зелий.Возвращает значение 
+// // свойства potions.
 
-// addPotion(newPotion) - добавляет зелье newPotion (уже объект) 
-// в массив в свойстве potions, но только если такого зелья еще нет 
-// в инвентаре. В противном случае возвращается строка.
+// // addPotion(newPotion) - добавляет зелье newPotion (уже объект) 
+// // в массив в свойстве potions, но только если такого зелья еще нет 
+// // в инвентаре. В противном случае возвращается строка.
 
-// removePotion(potionName) - удаляет объект зелья с именем
-//  potionName из массива в свойстве potions.
+// // removePotion(potionName) - удаляет объект зелья с именем
+// //  potionName из массива в свойстве potions.
 
-// updatePotionName(oldName, newName) - обновляет свойство name 
-// объекта-зелья с названием oldName на newName в массиве potions.
+// // updatePotionName(oldName, newName) - обновляет свойство name 
+// // объекта-зелья с названием oldName на newName в массиве potions.
 
-const atTheOldToad = {
-  potions: [
-    { name: "Speed potion", price: 460 },
-    { name: "Dragon breath", price: 780 },
-    { name: "Stone skin", price: 520 },
-  ],
-  // Change code below this line
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   // Change code below this line
   
-  getPotions() {
-    // console.log(this.potions);
-    return this.potions;
-  },
+//   getPotions() {
+//     // console.log(this.potions);
+//     return this.potions;
+//   },
   
-  addPotion(newPotion) {
+//   addPotion(newPotion) {
 
-    for (let potion of this.potions) {
+//     for (let potion of this.potions) {
 
-      if (potion.name === newPotion.name) {
-        // console.log(`Error! Potion ${newPotion} is already in your inventory!`);
-        return `Error! Potion ${newPotion} is already in your inventory!`;
-      }; 
-    }; 
-    // console.log(this.potions);
-    return this.potions.push(newPotion);
-  },
+//       if (potion.name === newPotion.name) {
+//         console.log(`Error! Potion ${newPotion.name} is already in your inventory!`);
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }; 
+//     }; 
+//     // console.log(this.potions);
+//     return this.potions.push(newPotion);
+//   },
 
-  removePotion(potionName) {
-    for (let potion of this.potions) {
-      // console.log(potion.name);
-      // console.log(potionName);
-      if (potion.name === potionName) {
-        return this.potions.splice(potion, 1);
-        
-      };
-    };
-    console.log(this.potions);
-    return `Potion ${potionName} is not in inventory!`;
-  },
-  updatePotionName(oldName, newName) {
-    const potionIndex = this.potions.indexOf(oldName);
+//   removePotion(potionName) {
+//           // console.log(potionName);
+//     for (let potion of this.potions) {
+//       console.log(potion.name);
 
-    if (potionIndex === -1) {
-      return `Potion ${oldName} is not in inventory!`;
-    }
+//       if (potion.name === potionName) {
+//         console.log(this.potions);
+//         const potionIndex =  this.potions.indexOf(potion);
+//         this.potions.splice(potionIndex, 1);
+//         // return;
+//       };
+//     };
+//     console.log(this.potions);
+//     return `Potion ${potionName} is not in inventory!`;
+//   },
 
-    this.potions.splice(potionIndex, 1, newName);
-  },
-  // Change code above this line
-};
+//   updatePotionName(oldName, newName) {
+//     // console.log(this.potions);
 
+//     for (let potion of this.potions) {
 
-// atTheOldToad.getPotions();
-// для исходного объекта возвращает [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
+//       if (potion.name === oldName) {
+//         // const potionIndex =  this.potions.indexOf(potion);
+//         // this.potions.splice(potionIndex, 1, newName);
+//         // return;
+//         potion.name = newName;
+//         // console.log(this.potions);
+//       };
+//     };
+//     // console.log(`Potion ${oldName} is not in inventory!`);
+//     return `Potion ${oldName} is not in inventory!`;
+//   },
 
-// atTheOldToad.addPotion({ name: "Stone skin", price: 520 });
-// atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
-// // , в массиве potions последним элементом будет этот объект
+// };
 
-// atTheOldToad.addPotion({ name: "Power potion", price: 270 })
-// // , в массиве potions последним элементом будет этот объект
-// // Если добавляемое зелье уже есть в массиве potions, метод 
-// // addPotion возвращает строку с текстом из исходного кода
-
-// // Если добавляемое зелье уже есть в массиве potions, 
-// // метод addPotion не добавляет в него передаваемый обьект
-// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
-// // , массив potions не изменяется
-
-// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
-// // , массив potions не изменяется
-
-// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
-// // , возвращает строку 
-// // "Error! Potion Dragon breath is already in your inventory!"
+// // atTheOldToad.addPotion({ name: 'Stone skin', price: 240 });
+// // `, возвращает строку `'Error! Potion Stone skin is already in your inventory!'`.
+// atTheOldToad.addPotion({ name: 'Dragon breath', price: 700 });
+// // `, возвращает строку 
+// // `'Error! Potion Dragon breath is already in your inventory!'`.
 
 
-// atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
-// // , возвращает строку 
-// // "Error! Potion Stone skin is already in your inventory!"
+// // atTheOldToad.getPotions();
+// // для исходного объекта возвращает [ { name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 } ]
 
-atTheOldToad.removePotion("Dragon breath")
+// // atTheOldToad.addPotion({ name: "Stone skin", price: 520 });
+// // atTheOldToad.addPotion({ name: "Invisibility", price: 620 })
+// // // , в массиве potions последним элементом будет этот объект
+
+// // atTheOldToad.addPotion({ name: "Power potion", price: 270 })
+// // // , в массиве potions последним элементом будет этот объект
+// // // Если добавляемое зелье уже есть в массиве potions, метод 
+// // // addPotion возвращает строку с текстом из исходного кода
+
+// // // Если добавляемое зелье уже есть в массиве potions, 
+// // // метод addPotion не добавляет в него передаваемый обьект
+// // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+// // // , массив potions не изменяется
+
+// // atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+// // // , массив potions не изменяется
+
+// // atTheOldToad.addPotion({ name: "Dragon breath", price: 700 })
+// // // , возвращает строку 
+// // // "Error! Potion Dragon breath is already in your inventory!"
+
+
+// // atTheOldToad.addPotion({ name: "Stone skin", price: 240 })
+// // // , возвращает строку 
+// // // "Error! Potion Stone skin is already in your inventory!"
+
+// // atTheOldToad.removePotion("Dragon breath")
+// // // , в свойстве potions будет массив 
+// // // [ { name: "Speed potion", price: 460 }, { name: "Stone skin", price: 520 } ]
+
+// // atTheOldToad.removePotion("Speed potion")
+// // // , в свойстве potions будет массив 
+// // // [ { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 }]
+
+// // atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+// // // , в свойстве potions будет массив 
+// // // [{ name: "Speed potion", price: 460 }, { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 } ]
+
+// // atTheOldToad.updatePotionName("Stone skn", "Invulnerability potion")
 // // , в свойстве potions будет массив 
-// // [ { name: "Speed potion", price: 460 }, { name: "Stone skin", price: 520 } ]
-
-// atTheOldToad.removePotion("Speed potion")
-// // , в свойстве potions будет массив 
-// // [ { name: "Dragon breath", price: 780 }, { name: "Stone skin", price: 520 }]
-
-// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
-// // , в свойстве potions будет массив 
-// // [{ name: "Speed potion", price: 460 }, { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 } ]
-
-// atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion")
-// // , в свойстве potions будет массив 
-// // [{ name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 } ]
+// // // [{ name: "Speed potion", price: 460 }, { name: "Dragon breath", price: 780 }, { name: "Invulnerability potion", price: 520 } ]

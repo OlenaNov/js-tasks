@@ -1066,27 +1066,25 @@ const users = [
   ];
 
 
-//   const getUsersWithEyeColor = (users, color) => {
-//     users.filter((user) => {
-//         if (user.eyeColor === color) {
-//             console.log(user.name);
-//             return user.name;
-//         }
-// });
-//    };
 
-//    getUsersWithEyeColor(users, "brown");
+// const getUsersWithEyeColor = (users, color) => {
+//   let arrayNames = [];
+//  users.filter(user => {
+//    if (user.eyeColor === color) {
+//      arrayNames.push(user.name);
+//    }
+//  });
+//  console.log(arrayNames);
+//  return arrayNames;
+// };
 
+   getUsersWithEyeColor(users, "blue");
 
-const getUsersWithEyeColor = (users, color) => {
-    users.filter((user) => {
-        let usersEyeColor = [];
-        if (user.eyeColor === color) {
-            usersEyeColor.push(user.name);
-        }
-        console.log(usersEyeColor);
-        return usersEyeColor;
-});
-   };
+// `color` это `'blue'`, функция возвращает массив объектов 
+//  `Moore Hensley`, `Sharlene Bush` и `Carey Barr`
 
-   getUsersWithEyeColor(users, "brown");
+// `color` это `'green'`
+// `Ross Vazquez` и `Elma Head`
+
+// `color` это `'brown'`
+// `Blackburn Dotson` и `Sheree Anthony`

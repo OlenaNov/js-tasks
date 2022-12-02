@@ -1078,6 +1078,12 @@ const users = [
 //  return arrayNames;
 // };
 
+const getUsersWithEyeColor = (users, color) => {
+  const eyeColorArray = users.filter(user => user.eyeColor === color);
+    console.log(eyeColorArray);
+    return eyeColorArray.map(({name}) => console.log(...[name]));
+  };
+
    getUsersWithEyeColor(users, "blue");
 
 // `color` это `'blue'`, функция возвращает массив объектов 

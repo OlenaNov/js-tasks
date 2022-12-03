@@ -1187,8 +1187,140 @@ const users  = [
 //     }));
 //   };
 
-const getUsersWithFriend = (users, friendName) => { 
-  users.map(user => user.friends.filter(friend => friend === friendName));
-  };
+// const getUsersWithFriend = (users, friendName) => { 
+//   const usersFriend = users.filter(({friends}) => 
+//     friends.includes(friendName));
+//     console.log(usersFriend);
+//     return usersFriend;
+// };
 
-getUsersWithFriend(users, "Briana Decker");
+// getUsersWithFriend(users, "Briana Decker");
+
+
+
+
+
+
+// const getFriends = (users) => {
+//   const allFriends = users.flatMap(user => user.friends).filter((friend, idx, arr) => 
+//   arr.indexOf(friend) === idx);
+// console.log(allFriends);
+// };
+
+// getFriends(users);
+
+
+
+
+
+// const getActiveUsers = (users) => {
+//   const get = users.filter(user => user.isActive);
+//   console.log(get);
+// };
+
+// getActiveUsers(users);
+
+
+
+
+
+// const getUserWithEmail = (users, email) => {
+//   users.find(({email: emailUser}) => emailUser === email);
+// };
+
+// getUserWithEmail(users, "shereeanthony@kog.com");
+
+
+
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// // Change code below this line
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => total + player.playtime / player.gamesPlayed, 0);
+
+
+
+
+
+// const calculateTotalBalance = users => {
+//   const totalBalance = users.reduce((total, user) => 
+//   total + user.balance, 0);
+//  console.log(totalBalance);
+//   return totalBalance;
+// };
+
+// calculateTotalBalance(users);
+
+
+
+
+// const getTotalFriendCount = users => {
+//   const totalFriend = users.reduce((total, user) => 
+//   total + user.friends.length, 0);
+//    console.log(totalFriend);
+//  return totalFriend;
+// };
+
+// getTotalFriendCount(users);
+
+
+
+
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const sortedByAuthorName = [...books].sort((a, b) =>
+//  a.author.localeCompare(b.author));
+
+// const sortedByReversedAuthorName = [...books].sort((a, b) =>
+//  b.author.localeCompare(a.author));
+
+// const sortedByAscendingRating = [...books].sort((a, b) =>
+//  a.rating - b.rating);
+
+// const sortedByDescentingRating = [...books].sort((a, b) =>
+//  b.rating - a.rating);
+
+//  console.log(sortedByAuthorName);
+//  console.log(sortedByReversedAuthorName);
+//  console.log(sortedByAscendingRating);
+//  console.log(sortedByDescentingRating);
+
+
+
+
+
+
+// const getNamesSortedByFriendCount = users => {
+//   const sortedNames = [...users]
+//     .sort((a, b) => a.friends.length - b.friends.length)
+//  .map(({name}) => name);
+//  console.log(sortedNames);
+//  return sortedNames;
+// };
+
+// getNamesSortedByFriendCount(users);

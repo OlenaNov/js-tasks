@@ -36,3 +36,35 @@
 
 
     
+
+
+
+class Blogger {
+
+constructor({ email, age, numbersOfPosts, topics  = {} }) {
+        this.email = email;
+        this.age = age;
+        this.numbersOfPosts = numbersOfPosts;
+        this.topics = topics;
+    }
+
+    getInfo() {
+        return `User ${email} is ${age} years old and has ${numbersOfPosts} posts`;
+    }
+
+    updatePostCount(value) {
+        this.numbersOfPosts += value;
+    }
+
+};
+
+
+
+const mango = new Blogger({
+    email: 'mango@mail.com', 
+    age: 24, 
+    numbersOfPosts: 20, 
+    topics: ['tech', 'cooking'],
+});
+
+console.log(mango);

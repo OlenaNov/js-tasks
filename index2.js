@@ -39,32 +39,113 @@
 
 
 
-class Blogger {
+// class Blogger {
 
-constructor({ email, age, numbersOfPosts, topics  = {} }) {
-        this.email = email;
-        this.age = age;
-        this.numbersOfPosts = numbersOfPosts;
-        this.topics = topics;
-    }
+// constructor({ email, age, numbersOfPosts, topics  = {} }) {
+//         this.email = email;
+//         this.age = age;
+//         this.numbersOfPosts = numbersOfPosts;
+//         this.topics = topics;
+//     }
 
-    getInfo() {
-        return `User ${email} is ${age} years old and has ${numbersOfPosts} posts`;
-    }
+//     getInfo() {
+//         return `User ${this.email} is ${this.age} years old and has ${this.numbersOfPosts} posts`;
+//     }
 
-    updatePostCount(value) {
-        this.numbersOfPosts += value;
-    }
+//     updatePostCount(value) {
+//         this.numbersOfPosts += value;
+//     }
 
-};
+// };
+
+// const mango = new Blogger({
+//     email: 'mango@mail.com', 
+//     age: 24, 
+//     numbersOfPosts: 20, 
+//     topics: ['tech', 'cooking'],
+// });
+
+// console.log(mango);
+// console.log(mango.getInfo());
+// mango.updatePostCount(15);
+// console.log(mango);
 
 
 
-const mango = new Blogger({
-    email: 'mango@mail.com', 
-    age: 24, 
-    numbersOfPosts: 20, 
-    topics: ['tech', 'cooking'],
-});
+//                     TILDA TILDA TILDA
 
-console.log(mango);
+// class Storage {
+//     constructor (items = []) {
+//         this.items = items;
+//     }
+
+//     getItems() {
+//         return this.items;
+//     }
+
+//     addItem(item) {
+//         this.items.push(item);
+//     }
+
+//     removeItem(item) {
+//         // return this.items.includes(item) 
+//         // ? this.items.splice(this.items.indexOf(item), 1) 
+//         // : "Errore!"
+
+        
+//         const idx = this.items.indexOf(item);
+//         if(!!~idx) {
+//             this.items.splice(idx, 1)
+//             console.log(idx);
+//         }
+//     }
+// };
+
+// const storage = new Storage (["apple", "lemon", "grape", "peach"]);
+
+// // console.log(storage);
+// // console.log(storage.getItems());
+// storage.addItem("pear");
+// storage.removeItem("grape");
+// console.log(storage);
+
+
+
+
+
+// class User {
+
+//     #login;
+//     #email;
+
+//     constructor({ login, email }) {
+//         this.#login = login;
+//         this.#email = email;
+//     }
+
+//     get loginValue() {
+//         return this.#login;
+//     }
+
+//     set loginValue(newLogin) {
+//         this.#login = newLogin;
+//     }
+
+//     get emailValue() {
+//         return this.#email;
+//     }
+
+//     set emailValue(newEmail) {
+//         this.#email = newEmail;
+//     }
+// };
+
+// const mango = new User({
+//     login: 'Mango', 
+//     email: 'mango@com',
+// });
+
+// console.log(mango);
+// console.log(mango.loginValue);
+// mango.loginValue = 'Poly';
+// console.log(mango);

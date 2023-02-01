@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "index.js": "^0.0.3"
-  }
+  },
+  "name": "js-tasks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlenaNov/js-tasks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlenaNov/js-tasks/issues"
+  },
+  "homepage": "https://github.com/OlenaNov/js-tasks#readme",
+  "description": ""
 }

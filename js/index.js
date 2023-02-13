@@ -929,3 +929,46 @@
 // logItems (['I', 'am', 'lucky', '!']);
 
 
+
+
+// const max = 10;
+// for (let i = 0; i < max; i += 1) {
+//   console.log(`${max} % ${i} = `, max % i);
+// }
+
+
+
+// // cozdat employees
+
+// const employees = 10;
+// let totalSalary = 0;
+// const minSalary = 500;
+// const maxSalary = 5000;
+
+// // metodom for ;perebrat rabotnicov
+
+// for(let i = 1; i <= employees; i += 1) {
+//     let salary = Math.round(Math.random() * (maxSalary - minSalary) + minSalary);
+//     // let salary = Number((Math.random() * (maxSalary - minSalary) + minSalary).toFixed(0));
+//     console.log(salary);
+//     totalSalary += salary;
+// }
+
+// console.log(totalSalary);
+// // cgenerirovat cluchainuu zp
+// // pribavit k total;
+
+
+
+
+
+
+
+
+
+
+
+
+// const min = 6;
+// const max = 13;
+// let total = 0;
